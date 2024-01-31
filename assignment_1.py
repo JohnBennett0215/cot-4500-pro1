@@ -6,7 +6,9 @@ def fp(x):
    
 def g(x):
     return pow(3, -x)
-
+"""
+Test for bisection method
+"""
 tol = 0.0001
 left = -4
 right = 7
@@ -24,7 +26,9 @@ while(abs(right - left) > tol and i < max):
         left = p
         
 print(i)
-
+"""
+Test for Newton Raphson method
+"""
 p = -4
 pn = 0.0001
 tol = 0.0001
@@ -52,8 +56,9 @@ while ( i <= maxi):
     else:
     
         print("Unsuccessful")
-         
-
+"""
+Test for Approximation Method
+"""
 error_tolerance = 0.000001
 
 guess = 1.0
@@ -72,8 +77,9 @@ while True:
     
 print(f"\nApproximated square root of 5: {next_guess}")
 print(f"Number of iterations: {i + 1}")
-
-
+"""
+Test for Fixed Point Iteration
+"""
 pn = 1
 tol = 0.000001
 n = 1000
